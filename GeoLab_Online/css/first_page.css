@@ -45,15 +45,17 @@ a:hover, a:focus, a:active {
 	float: right;
 	margin-top: 8px;
 }
-.login_btn, .box_desc .more {
+.login_btn, .box_desc .more, form input[type=submit], form input[type=reset] {
 	color: #715774;
 	background-color: #DCE1ED;
 	border-radius: 7px;
 	border: none;
 	padding: 6px 10px 2px;
 	transition: 0.3s ease;
+	font-family: 'BPGNinoMtavruli-Bold';
 }
-.login_btn:hover, .box_desc .more:hover {
+.login_btn:hover, .box_desc .more:hover, 
+form input[type=submit]:hover, form input[type=reset]:hover {
 	background-color: #715774;
 	color: #DCE1ED;
 	transition: 0.3s ease;
@@ -188,6 +190,9 @@ a:hover, a:focus, a:active {
 }
 
 /*---------About---------*/
+.about {
+	margin-bottom: 40px;
+}
 .about_intro {
 	font-size: 18px;
 	color: #787E86;
@@ -215,4 +220,41 @@ a:hover, a:focus, a:active {
 }
 .about ul li {
 	display: table;
+}
+
+/*------Contact-------*/
+
+.contact form {
+	max-width: 50%;
+	margin: 25px 0px 70px 40px;
+}
+form input[type=email], form input[type=text], form textarea {
+	border: 2px solid rgba(120, 126, 135, 0.5);
+	border-radius: 5px;
+	font-size: 14px;
+	color: #787E86;
+	width: 100%;
+	padding: 12px 15px;
+	margin-bottom: 20px;
+	transition: .3s ease-in;
+}
+form input[type=submit], form input[type=reset] {
+	float: right;
+	margin-left: 15px;
+}
+form input:focus, form textarea:focus {
+	box-shadow: 0px 0px 10px 2px rgba(113, 87, 116, 0.5);
+	transition: .3s ease-in;
+}
+
+
+/*-------footer--------*/
+footer {
+	background-color: #715774;
+}
+.developers {
+	text-align: center;
+	font-size: 14px;
+	color: #ccc;
+	padding: 30px 15px;
 }
