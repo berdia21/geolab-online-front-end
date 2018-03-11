@@ -45,7 +45,7 @@ a:hover, a:focus, a:active {
 	float: right;
 	margin-top: 8px;
 }
-.login_btn, .box_desc .more, form input[type=submit], form input[type=reset] {
+.login_btn, .box_desc .more, .registration_box form input[type=submit], .registration_box form input[type=reset] {
 	color: #715774;
 	background-color: #DCE1ED;
 	border-radius: 7px;
@@ -55,7 +55,7 @@ a:hover, a:focus, a:active {
 	font-family: 'BPGNinoMtavruli-Bold';
 }
 .login_btn:hover, .box_desc .more:hover, 
-form input[type=submit]:hover, form input[type=reset]:hover {
+.registration_box form input[type=submit]:hover, .registration_box form input[type=reset]:hover {
 	background-color: #715774;
 	color: #DCE1ED;
 	transition: 0.3s ease;
@@ -71,7 +71,7 @@ form input[type=submit]:hover, form input[type=reset]:hover {
 
 /*------Mimartulebebi------*/
 .mimartulebebi {
-	margin-top: 90px;
+	padding-top: 90px;
 }
 .block_title {
 	font-size: 28px;
@@ -228,7 +228,7 @@ form input[type=submit]:hover, form input[type=reset]:hover {
 	max-width: 50%;
 	margin: 25px 0px 70px 40px;
 }
-form input[type=email], form input[type=text], form textarea {
+.contact form input[type=email], .contact form input[type=text], .contact form textarea {
 	border: 2px solid rgba(120, 126, 135, 0.5);
 	border-radius: 5px;
 	font-size: 14px;
@@ -238,15 +238,26 @@ form input[type=email], form input[type=text], form textarea {
 	margin-bottom: 20px;
 	transition: .3s ease-in;
 }
-form input[type=submit], form input[type=reset] {
+.contact form input[type=submit], .contact form input[type=reset] {
 	float: right;
 	margin-left: 15px;
+	color: #715774;
+	background-color: #DCE1ED;
+	border-radius: 7px;
+	border: none;
+	padding: 6px 10px 2px;
+	transition: 0.3s ease;
+	font-family: 'BPGNinoMtavruli-Bold';
 }
-form input:focus, form textarea:focus {
+.contact form input:focus, .contact form textarea:focus {
 	box-shadow: 0px 0px 10px 2px rgba(113, 87, 116, 0.5);
 	transition: .3s ease-in;
 }
-
+.contact form input[type=submit]:hover, .contact form input[type=reset]:hover {
+	background-color: #715774;
+	color: #DCE1ED;
+	transition: 0.3s ease;
+}
 
 /*-------footer--------*/
 footer {
@@ -261,7 +272,7 @@ footer {
 
 
 /*----------resgistration----------*/
-.registration_bg {
+.registration_bg, .search_bg {
 	background-color: rgba(255,255,255, 0.7);
 	position: fixed;
 	width: 100%;
@@ -269,7 +280,7 @@ footer {
 	display: none;
 	z-index: 99;
 }
-.registration_wrapper {
+.registration_wrapper, .search_wrapper {
 	position: relative;
 }
 .close_btn {
@@ -282,11 +293,84 @@ footer {
 	background:none;
 }
 .registration_box {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
+	margin-top: 10%;
+}
 
+/*---------Search Form---------*/
+
+
+.search_form_in {
+	margin-top: 10px;
+	padding-top: 15px;
+	background-color: #fff;
+}
+.search_submit {
+	display: inline-block;
+	float: left !important;
+}
+.search_area{
+	width: 90% !important;
+	border-bottom: 2px solid #715774;
+	border-radius: 0px !important;
+	height: 36px;
+	padding: 0px 15px;
+	transition: 0.3s ease-in;
+}
+.search_area:focus {
+	border: 1px solid #715774;
+
+	transition: 0.3s ease-in;
+}
+.search_form  form input[type=submit], .search_form  form input[type=submit]:hover {
+	background-color: #fff;
+	border-left: 2px solid #715774;
+	color: #715774;
+	border-radius: 0px;
+	font-family: 'BPGNinoMtavruli';
+	padding: 5px 15px 0px;
+	margin-right: 10px;
+	margin-top: 30px
+	font-size: 22px;
+}
+.search_form  form input[type=submit] {
+	font-size: 22px;
+}
+
+.filter {
+	margin-top: 50px;
+}
+.filter_box {
+	padding: 0px 80px 80px 80px;
+}
+
+.filter_box ul li {
+	margin-bottom: 10px;
+	position: relative;
+}
+.filter_box ul li a {
+	color: #787E86;
+	font-size: 18px;
+}
+.filter_box ul li:first-child a{
+	font-size: 21px;
+	color: #715774;
+} 
+.filter_box ul li:before {
+	content: "";
+	width: 13px;
+	height: 13px;
+	border: 1px solid #478ECC;
+	display: inline-block;
+	margin-right: 10px;
+	border-radius: 3px;
+	position: absolute;
+	left: -24px;
+	top: 5px;
+}
+.filter_box ul li:hover a {
+	color: #478ECC;
+}
+.filter_box ul li:hover:before {
+	border: 1px solid #715774;
+	background-color: #715774;
 }
