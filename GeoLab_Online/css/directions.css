@@ -1,0 +1,22 @@
+.design_cover {
+	background-image: url(../images/design_cover.png);
+}
+.direction_cover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+}
+
+
+.direction_addres a {
+	font-size: 16px;
+	color: #715774;
+	padding-top: 50px;
+	display: inline-block;
+	margin: 0px 3px;
+}
+.direction_addres a:hover {
+	color: #478ECC;
+}

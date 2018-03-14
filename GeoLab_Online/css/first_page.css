@@ -73,10 +73,9 @@ a:hover, a:focus, a:active {
 .mimartulebebi {
 	padding-top: 90px;
 }
-.block_title {
+.block_title, .block_title a {
 	font-size: 28px;
 	color: #478ECC;
-
 }
 .block_body {
 	margin-top: 35px;
@@ -373,4 +372,58 @@ footer {
 .filter_box ul li:hover:before {
 	border: 1px solid #715774;
 	background-color: #715774;
+}
+
+.checks {
+	margin: 0px 0px 30px 0px;
+	display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #715774;
+    font-weight: lighter;
+}
+
+.checks input {
+	position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #DCE1ED;
+    border-radius: 3px;
+}
+.checks:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.checks input:checked ~ .checkmark {
+    background-color: #715774;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checks input:checked ~ .checkmark:after {
+    display: block;
+}
+.checks .checkmark:after {
+    left: 5px;
+	top: 2px;
+	width: 5px;
+	height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
