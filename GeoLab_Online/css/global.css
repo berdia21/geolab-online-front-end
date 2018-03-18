@@ -20,3 +20,6 @@
 .no_padding {
 	padding: 0px;
 }
+.active {
+	color: #478ECC !important;
+}
