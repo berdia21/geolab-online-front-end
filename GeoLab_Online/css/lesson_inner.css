@@ -1,0 +1,61 @@
+.lesson_video {
+
+}
+.lesson_cover  {
+	position: relative;
+}
+.direction_addres {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.lesson_description {
+	margin: 50px 0px;
+}
+.lectors ul {
+	margin: 20px 40px;
+}
+.lector_info {
+	display: inline-block;
+	margin: 0px 12px;
+	text-transform: uppercase;
+}
+.lector_info img {
+	float: left;
+	max-height: 165px;
+}
+.lector_info a {
+	display: inline-block;
+	margin-top: 55px;
+	margin-left: 8px;
+	font-size: 16px;
+}
+.lector_name {
+	color: #787E86;
+}
+.lesson_inner_page .silabusi {
+	margin: 50px 0px;
+}
+.lesson_inner_page .lesson_wrapper {
+	margin: 30px;
+}
+.lesson_inner_page .lesson_name {
+	border-radius: 4px;
+	background-color: #DCE1ED;
+	font-size: 18px;
+	margin-bottom: 18px;
+	padding: 6px 14px;
+}
+.lesson_inner_page .lesson_name a {
+	display: block;
+	color: #478ECC;
+}
+.lesson_inner_page .locked {
+	background-image: url(../images/lock.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+.lesson_inner_page .locked a {
+	color: #787E86;
+}

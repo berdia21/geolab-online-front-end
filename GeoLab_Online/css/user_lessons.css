@@ -1,0 +1,164 @@
+.user_lessons_page .main_content {
+	margin: 80px 0px; 
+}
+.user_lessons_page .block_title {
+	color: #7A627D;
+}
+.user_lessons_page .video_holder {
+	width: 320px;
+	height: 200px;
+	border-radius: 15px;
+	background-color: #DCE1ED;
+	display: table;
+	margin: auto;
+	position: relative;
+}
+.user_lessons_page .video_holder a {
+	display: table;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.user_lessons_page .main_content .container .row {
+	margin: 50px 0px;
+	position: relative;
+}
+
+.user_lessons_page .col-md-4 {
+	position: static;
+}
+.user_lessons_page .video_holder .glyphicon-chevron-right {
+	font-size: 16px;
+	color: #478ECC;
+	right: -12px;
+	bottom: 0;
+	top: 0px;
+	display: inline-block;
+	width: auto;
+	transform: rotate(90deg);
+}
+.user_lessons_page .video_holder .c100 {
+	margin: 0;
+}
+.user_lessons_page .video_holder .c100.small {
+	font-size: 65px;
+}
+
+.pie, .c100 .bar, .c100.p51 .fill, .c100.p52 .fill, .c100.p53 .fill, .c100.p54 .fill, .c100.p55 .fill,
+.c100.p56 .fill, .c100.p57 .fill, .c100.p58 .fill, .c100.p59 .fill, .c100.p60 .fill, .c100.p61 .fill,
+.c100.p62 .fill, .c100.p63 .fill, .c100.p64 .fill, .c100.p65 .fill, .c100.p66 .fill, .c100.p67 .fill, 
+.c100.p68 .fill, .c100.p69 .fill, .c100.p70 .fill, .c100.p71 .fill, .c100.p72 .fill, .c100.p73 .fill,
+.c100.p74 .fill, .c100.p75 .fill, .c100.p76 .fill, .c100.p77 .fill, .c100.p78 .fill, .c100.p79 .fill,
+.c100.p80 .fill, .c100.p81 .fill, .c100.p82 .fill, .c100.p83 .fill, .c100.p84 .fill, .c100.p85 .fill, 
+.c100.p86 .fill, .c100.p87 .fill, .c100.p88 .fill, .c100.p89 .fill, .c100.p90 .fill, .c100.p91 .fill, 
+.c100.p92 .fill, .c100.p93 .fill, .c100.p94 .fill, .c100.p95 .fill, .c100.p96 .fill, .c100.p97 .fill,
+.c100.p98 .fill, .c100.p99 .fill, .c100.p100 .fill {
+	border-color: #715874;
+}
+
+
+.user_lessons_page .video_holder .c100 {
+	background-color: 	#478ECC;
+	transform: rotate(-90deg);
+}
+.user_lessons_page .video_holder .c100::after {
+	background-color: #DCE1ED;
+	top: 0.04em;
+	left: 0.04em;
+	width: 0.92em;
+	height: 0.92em;
+}
+
+.user_lessons_page .video_holder .c100:hover::after {
+
+}
+.user_lessons_page .video_holder .c100:hover > span {
+	line-height: 5;
+}
+
+.user_lessons_page .desc_holder .note_icon a {
+	display: inline-block;
+	background-image: url(../images/note_icon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 35px;
+}
+
+.user_lessons_page .desc_holder, .lecture_desc {
+	width: 320px;
+ 	display: table;
+ 	margin:  auto;
+ 	padding-top: 15px;
+ 	background-color: #fff;
+}
+
+.user_lessons_page .video_title, .user_lessons_page .video_intro, .lecture_desc .lecture_title, .lecture_desc .lecture_intro {
+	display: table;
+	float: left;
+	color: #787E86;
+	font-size: 14px;
+	transition: 0.3s ease-out;
+}
+.user_lessons_page .note_icon {
+	display: table;
+	float: right;
+}
+
+.user_lessons_page .video_title a, .user_lessons_page .video_intro a {
+	color: #787E86;
+	font-size: 14px;
+	transition: 0.3s ease-out;
+}
+.user_lessons_page .video_title a:hover, .user_lessons_page .video_intro a:hover {
+	color: #478ECC;
+} 
+
+.user_lessons_page .lesson_wrapper {
+	
+	margin-bottom: 30px;
+}
+
+.user_lessons_page .note {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 9;
+	max-width: 720px;
+	margin-left: 30px;
+}
+
+.user_lessons_page .note p, .lecture_desc .note p {
+	padding: 30px;
+	width: 720px;
+	height: 537px;
+	background-color: #DCE1ED;
+	border-radius: 20px;
+	overflow-y: auto;
+	margin: 0;
+}
+
+.user_lessons_page .note_desc_holder {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 10px;
+}
+.user_lessons_page .note_title a, .user_lessons_page .note_intro a, .user_lessons_page .note_title, .user_lessons_page .note_intro {
+	color: #787E86;
+	font-size: 14px;
+	transition: 0.3s ease-out;
+}
+.user_lessons_page .note_title a:hover, .user_lessons_page .note_intro a:hover {
+	color: #478ECC;
+} 
+
+.user_lessons_page .note .close_btn {
+	bottom: -15px;
+	font-size: 45px;
+	top: auto;
+	right: 5px;
+	color: #715874;
+}

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GeoLab Online - Directions</title>
+	<title>GeoLab Online</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/first_page.css">
 	<link rel="stylesheet" type="text/css" href="css/registration.css">
 	<link rel="stylesheet" type="text/css" href="css/directions.css">
+	<link rel="stylesheet" type="text/css" href="css/lesson_inner.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
-<body class="directions_page">
+<body class="lesson_inner_page">
 	<div class="search_bg">
 		<div class="search_wrapper clearfix">
 			<button class="close_btn"> X </button>
@@ -23,202 +24,204 @@
 						<input class="search_area" id="myInput" type="text" placeholder="">
 					</form>
 					<div class="filter" id="filter_DIV">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="filter_box font-DejaVuSans">
-										<ul>
-											<li class="font-BPGNinoMtavruli">
-												<label>
-													<input type="checkbox"> დიზაინი
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> პოლიგრაფიული დიზაინი
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> ინტერფეისის დიზაინი
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> 3D დიზაინი
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> შრიფტის დიზაინის საფუძვლები და 
-													ფონტ-ინჟინერია
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> ვიდეო გრაფიკა და მონტაჟი
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="filter_box font-DejaVuSans">
-										<ul>
-											<li class="font-BPGNinoMtavruli">
-												<label>
-													<input type="checkbox"> ვებ პროგრამირება
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> ვებ პროგრამირება Front-End (HTML)
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> ვებ პროგრამირება PHP
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> ვებ პროგრამირება ASP.NET.MVC
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> Wordpres
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> Drupal
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> Meanlab
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-										</ul>
-									</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პოლიგრაფიული დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ინტერფეისის დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> 3D დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> შრიფტის დიზაინის საფუძვლები და 
+												ფონტ-ინჟინერია
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვიდეო გრაფიკა და მონტაჟი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
 								</div>
 							</div>
-
-							<div class="row">
-								<div class="col-md-6">
-									<div class="filter_box font-DejaVuSans">
-										<ul>
-											<li class="font-BPGNinoMtavruli">
-												<label>
-													<input type="checkbox"> მობილური პროგრამირება
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> მობილური პროგრამირება IOS
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> მობილური პროგრამირება Android (java)
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="filter_box font-DejaVuSans">
-										<ul>
-											<li class="font-BPGNinoMtavruli">
-												<label>
-													<input type="checkbox"> თამაშების დეველოპმენტი
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> პროგრამირება Unity 3D
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-6">
-									<div class="filter_box font-DejaVuSans">
-										<ul>
-											<li class="font-BPGNinoMtavruli">
-												<label>
-													<input type="checkbox"> კოდირება
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> პროგრამირება C#
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> პროგრამირება და ლოგიკა
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="filter_box font-DejaVuSans">
-										<ul>
-											<li class="font-BPGNinoMtavruli">
-												<label>
-													<input type="checkbox"> კომუნიკაცია
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> სოციალური მედია მენეჯმენტი
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="checkbox"> Facebook Ads, GoogleAdWords, Google Analytics, SEO
-													<span class="checkmark_2"></span> 
-												</label>
-											</li>
-										</ul>
-
-									</div>
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება Front-End (HTML)
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება PHP
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება ASP.NET.MVC
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Wordpres
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Drupal
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Meanlab
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
 								</div>
 							</div>
-
 						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> მობილური პროგრამირება
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> მობილური პროგრამირება IOS
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> მობილური პროგრამირება Android (java)
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> თამაშების დეველოპმენტი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პროგრამირება Unity 3D
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> კოდირება
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პროგრამირება C#
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პროგრამირება და ლოგიკა
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> კომუნიკაცია
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> სოციალური მედია მენეჯმენტი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Facebook Ads, GoogleAdWords, Google Analytics, SEO
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
 
 	<header>
 		<div class="container">
@@ -231,7 +234,7 @@
 				<div class="col-md-8">
 					<div class="mainmenu font-BPGNinoMtavruli  clearfix">
 						<ul>
-							<li><a href="directions.html" class="active"> მიმართულებები </a></li>
+							<li><a href="directions.html">მიმართულებები </a></li>
 							<li><a href="lectures.html">ლექციები </a></li>
 							<li><a href="#teachers">ლექტორები </a></li>
 							<li><a href="#about">პროექტების შესახებ </a></li>
@@ -295,7 +298,7 @@
 													<label for="remember" class="remember"> დამახსოვრება</label>
 												</div>
 
-												
+
 
 												<div class="form-group">
 													<div class="row">
@@ -333,7 +336,7 @@
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -343,38 +346,86 @@
 		</div>
 	</div>
 
-	<!-- Directions Page Start-->
-	<div class="direction_cover design_cover">
+
+	<!-- Lesson_inner Start-->
+	<div class="lesson_cover lesson_video">
+		<iframe width="100%" height="315" src="https://www.youtube.com/embed/2MpUj-Aua48?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<div class="direction_addres font-BPGNinoMtavruli">
 			<div class="container">
-				<a href="directions.html"> მიმართულებები </a> / <a href="directions.html/#design"> დიზაინი </a>
+				<a href="directions.html"> მიმართულებები </a> / <a href="directions.html/#design"> დიზაინი </a> / <a href="directions.html/#lesson_name"> საგნის სახელი </a>
 			</div>
 		</div>
 	</div>
-	<div class="direction_description"> 
+
+	<div class="lesson_description"> 
 		<div class="container">
-			<span class="block_title font-BPGNinoMtavruli"> დიზაინი </span>
-			<div class="direction_intro font-DejaVuSans"> 
+			<span class="block_title font-BPGNinoMtavruli"> კურსის აღწერა </span>
+			<div class="lesson_intro font-DejaVuSans"> 
 				დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
 
 				ჯეოლაბში ისწავლება როგორც პოლიგრაფიული დიზაინი - საბაზისო კურსის სახით, ასევე, ინტერფეისის პროფესიული (მობილური აპლიკაციის, ვებგვერდისა და ა. შ.) დიზაინი. პირველ შემთხვევაში სტუდენტები, კურსის ფარგლებში, პლაკატის, ბუკლეტისა და სხვა პოლიგრაფიული პროდუქტის დიზაინზე მუშაობენ, მეორე შემთხვევაში კი მოსწავლეები თავად ქმნიან ელექტრონული მოწყობილობის, ვებგვერდისა და მობილური აპლიკაციის დიზაინსა და აიქონებს. ორივე შემთხვევაში სტუდენტების ძირითადი სამუშაო ინსტრუმენტი Adobe Illustrator-ია. კურსის ფარგლებში სტუდენტები Illustrator-ის გარდა სხვა გრაფიკულ პროგრამებშიც მუშაობენ, მაგალითად, Adobe Photoshop-ში.
 
-				დიზაინის მიმართულებით ჯეოლაბი კიდევ ერთ, 3D დიზაინის პროფესიულ კურსს სთავაზობს მსურველებს. ამ კურსის ფარგლებში სტუდენტები სივრცული ობიექტების შექმნას, მათ ანიმაციასა და ვიზუალიზაციას სწავლობენ. კურსის ფარგლებში სტუდენტები Cinema 4D-ს იყენებენ, რომელიც იდეალურია ზემოხსენებული ამოცანებისთვის. ამ ძლიერი 3D ინსტრუმენტის საშუალებით შესაძლებელია სარეკლამო რგოლების, მოკლემეტრაჟიანი ვიდეო პროდუქტებისა და თამაშების პერსონაჟების შექმნა
+				დიზაინის მიმართულებით ჯეოლაბი კიდევ ერთ, 3D დიზაინის პროფესიულ კურსს სთავაზობს მსურველებს. ამ კურსის ფარგლებში სტუდენტები სივრცული ობიექტების შექმნას, მათ ანიმაციასა და ვიზუალიზაციას სწავლობენ. კურსის ფარგლებში სტუდენტები Cinema 4D-ს იყენებენ, რომელიც იდეალურია ზემოხსენებული ამოცანებისთვის. ამ ძლიერი 3D ინსტრუმენტის საშუალებით შესაძლებელია სარეკლამო რგოლების, მოკლემეტრაჟიანი ვიდეო პროდუქტებისა და თამაშების პერსონაჟების შექმნა.
 			</div>
 		</div>
 	</div>
-	<div class="directions_menu">
+
+	<div class="lectors">
 		<div class="container">
-			<ul class="font-BPGNinoMtavruli">
-				<li><a href="#"> პოლიგრაფიული </a></li>
-				<li><a href="#"> ინტერფეისი </a></li>
-				<li><a href="#"> ვიდეო მონტაჟი </a></li>
-				<li><a href="#">  ფონტის ინჟინერია</a></li>
-			</ul> 
+			<span class="block_title font-BPGNinoMtavruli"> ლექტორები </span>
+			<ul>
+				<li class="lector_info clearfix"> 
+					<img src="images/teacher.png">
+					<a href="#lector_info">
+						<span class="lector_name font-BPGNinoMtavruli">  გიორგი ვახტანგიშვილი </span> <br>
+						<span class="lector_position font-BPGNinoMtavruli"> Android დეველოპერი </span>
+					</a>
+				</li>
+				<li class="lector_info clearfix"> 
+					<img src="images/teacher.png">
+					<a href="#lector_info">
+						<span class="lector_name font-BPGNinoMtavruli">  გიორგი ვახტანგიშვილი </span> <br>
+						<span class="lector_position font-BPGNinoMtavruli"> Android დეველოპერი </span>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
-	
-	<div class="direction_leqciebi" id="direction_leqciebi">
+
+	<div class="silabusi">
+		<div class="container">
+			<span class="block_title font-BPGNinoMtavruli"> სილაბუსი </span>
+			<div class="col-md-4">
+				<ul class="lesson_wrapper  font-DejaVuSans">
+					<li class="lesson_name"><a href="#">01 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name"><a href="#">02 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">03 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">04 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">05 შრიპტთან მუშაობა</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul class=" lesson_wrapper font-DejaVuSans">
+					<li class="lesson_name locked"><a href="#">06 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">07 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">08 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">09 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">10 შრიპტთან მუშაობა</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul class="lesson_wrapper font-DejaVuSans">
+					<li class="lesson_name locked"><a href="#">11 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">12 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">13 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">14 შრიპტთან მუშაობა</a></li>
+					<li class="lesson_name locked"><a href="#">15 შრიპტთან მუშაობა</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<div class="direction_leqciebi" id="direction_leqciebi">
 		<div class="container">
 			
 			<div class="block_body font-BPGNinoMtavruli">
@@ -556,7 +607,14 @@
 			</div>
 		</div>
 	</div>
-	<!-- Directions Page End-->
+
+
+	<!-- Lesson_inner End-->
+
+
+
+
+
 	<footer>
 		<div class="developers font-DejaVuSans">
 			ბერდია

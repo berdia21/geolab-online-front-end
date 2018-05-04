@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GeoLab Online</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/circle.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/first_page.css">
+	<link rel="stylesheet" type="text/css" href="css/registration.css">
+	<link rel="stylesheet" type="text/css" href="css/directions.css">
+	<link rel="stylesheet" type="text/css" href="css/lesson_inner.css">
+	<link rel="stylesheet" type="text/css" href="css/user_lessons.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body class="user_lessons_page">
+	<div class="search_bg">
+		<div class="search_wrapper clearfix">
+			<button class="close_btn"> X </button>
+			<div class="container">
+				<div class="search_form clearfix">
+					<form method="POST" class="search_form_in clearfix">
+						<input type="submit" name="search-submit" id="search-submit"  class="search_submit" value="ძებნა">
+						<input class="search_area" id="myInput" type="text" placeholder="">
+					</form>
+					<div class="filter" id="filter_DIV">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პოლიგრაფიული დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ინტერფეისის დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> 3D დიზაინი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> შრიფტის დიზაინის საფუძვლები და 
+												ფონტ-ინჟინერია
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვიდეო გრაფიკა და მონტაჟი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება Front-End (HTML)
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება PHP
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> ვებ პროგრამირება ASP.NET.MVC
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Wordpres
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Drupal
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Meanlab
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> მობილური პროგრამირება
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> მობილური პროგრამირება IOS
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> მობილური პროგრამირება Android (java)
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> თამაშების დეველოპმენტი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პროგრამირება Unity 3D
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> კოდირება
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პროგრამირება C#
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> პროგრამირება და ლოგიკა
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="filter_box font-DejaVuSans">
+									<ul>
+										<li class="font-BPGNinoMtavruli">
+											<label>
+												<input type="checkbox"> კომუნიკაცია
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> სოციალური მედია მენეჯმენტი
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox"> Facebook Ads, GoogleAdWords, Google Analytics, SEO
+												<span class="checkmark_2"></span> 
+											</label>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<header>
+		<div class="container">
+			<div class="header_wrapper clearfix">
+				<div class="col-md-2">
+					<div class="logo">
+						<a href="index.html"> <img src="images/logo.png"></a> 
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="mainmenu font-BPGNinoMtavruli  clearfix">
+						<ul>
+							<li><a href="directions.html">მიმართულებები </a></li>
+							<li><a href="lectures.html">ლექციები </a></li>
+							<li><a href="#teachers">ლექტორები </a></li>
+							<li><a href="#about">პროექტების შესახებ </a></li>
+							<li><a href="#contact">კონტაქტი </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="search_holder">
+						<button class="search_btn">
+							<img src="images/search.png">
+						</button>
+					</div>
+					<div class="login font-BPGNinoMtavruli">
+						<button class="login_btn"> 
+							შესვლა
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="registration_bg">
+		<div class="registration_wrapper clearfix">
+			<button class="close_btn"> X </button>
+			<div class="registration_box clearfix font-BPGNinoMtavruli">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div class="panel panel-login">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="col-xs-6">
+											<a href="#" class="active" id="login-form-link">შესვლა</a>
+										</div>
+										<div class="col-xs-6">
+											<a href="#" id="register-form-link"> რეგისტრაცია</a>
+										</div>
+									</div>
+									<hr>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-12">
+											<form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+
+												<div class="facebook_login">
+													<span class="fb_login_intro"> შესვლა ფეისბუკით</span>
+													<a href="#" class="btn btn-primary fb_color">Facebook</a>
+												</div>
+
+												<div class="form-group">
+													<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="იმეილი" value="">
+												</div>
+												<div class="form-group">
+													<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="პაროლი">
+												</div>
+												<div class="form-group text-center">
+													<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+													<label for="remember" class="remember"> დამახსოვრება</label>
+												</div>
+
+
+
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-4 col-sm-offset-4">
+															<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="შესვლა">
+														</div>
+													</div>
+												</div>							
+											</form>
+											<form id="register-form" action="http://phpoll.com/register/process" method="post" role="form" style="display: none;">
+												<div class="form-group">
+													<input type="text" name="name" id="name" tabindex="1" class="form-control" placeholder="სახელი" value="">
+												</div>
+												<div class="form-group">
+													<input type="text" name="lastname" id="lastname" tabindex="1" class="form-control" placeholder="გვარი" value="">
+												</div>
+
+												<div class="form-group">
+													<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="იმეილი" value="">
+												</div>
+												<div class="form-group">
+													<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="პაროლი">
+												</div>
+												<div class="form-group">
+													<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="გაიმეორეთ პაროლი">
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-sm-6 col-sm-offset-3">
+															<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="დადასტურება">
+														</div>
+													</div>
+												</div>
+											</form>	
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- User Lessons Start -->
+	<div class="main_content">
+		<div class="container">
+			<span class="block_title font-BPGNinoMtavruli"> განაგრძე ყურება </span>
+
+			<div class="row font-BPGNinoMtavruli">
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p39 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+									ჯეოლაბში ისწავლება როგორც პოლიგრაფიული დიზაინი - საბაზისო კურსის სახით, ასევე, ინტერფეისის პროფესიული (მობილური აპლიკაციის, ვებგვერდისა და ა. შ.) დიზაინი. პირველ შემთხვევაში სტუდენტები, კურსის ფარგლებში, პლაკატის, ბუკლეტისა და სხვა პოლიგრაფიული პროდუქტის დიზაინზე მუშაობენ, მეორე შემთხვევაში კი მოსწავლეები თავად ქმნიან ელექტრონული მოწყობილობის, ვებგვერდისა და მობილური აპლიკაციის დიზაინსა და აიქონებს. ორივე შემთხვევაში სტუდენტების ძირითადი სამუშაო ინსტრუმენტი Adobe Illustrator-ია. კურსის ფარგლებში სტუდენტები Illustrator-ის გარდა სხვა გრაფიკულ პროგრამებშიც მუშაობენ, მაგალითად, Adobe Photoshop-ში.
+
+									დიზაინის მიმართულებით ჯეოლაბი კიდევ ერთ, 3D დიზაინის პროფესიულ კურსს სთავაზობს მსურველებს. ამ კურსის ფარგლებში სტუდენტები სივრცული ობიექტების შექმნას, მათ ანიმაციასა და ვიზუალიზაციას სწავლობენ. კურსის ფარგლებში სტუდენტები Cinema 4D-ს იყენებენ, რომელიც იდეალურია ზემოხსენებული ამოცანებისთვის. ამ ძლიერი 3D ინსტრუმენტის საშუალებით შესაძლებელია სარეკლამო რგოლების, მოკლემეტრაჟიანი ვიდეო პროდუქტებისა და თამაშების პერსონაჟების შექმნა.
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p89 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+									ჯეოლაბში ისწავლება როგორც პოლიგრაფიული დიზაინი - საბაზისო კურსის სახით, ასევე, ინტერფეისის პროფესიული (მობილური აპლიკაციის, ვებგვერდისა და ა. შ.) დიზაინი. პირველ შემთხვევაში სტუდენტები, კურსის ფარგლებში, პლაკატის, ბუკლეტისა და სხვა პოლიგრაფიული პროდუქტის დიზაინზე მუშაობენ, მეორე შემთხვევაში კი მოსწავლეები თავად ქმნიან ელექტრონული მოწყობილობის, ვებგვერდისა და მობილური აპლიკაციის დიზაინსა და აიქონებს. ორივე შემთხვევაში სტუდენტების ძირითადი სამუშაო ინსტრუმენტი Adobe Illustrator-ია. კურსის ფარგლებში სტუდენტები Illustrator-ის გარდა სხვა გრაფიკულ პროგრამებშიც მუშაობენ, მაგალითად, Adobe Photoshop-ში.
+
+
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p0 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row font-BPGNinoMtavruli">
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p39 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+									ჯეოლაბში ისწავლება როგორც პოლიგრაფიული დიზაინი - საბაზისო კურსის სახით, ასევე, ინტერფეისის პროფესიული (მობილური აპლიკაციის, ვებგვერდისა და ა. შ.) დიზაინი. პირველ შემთხვევაში სტუდენტები, კურსის ფარგლებში, პლაკატის, ბუკლეტისა და სხვა პოლიგრაფიული პროდუქტის დიზაინზე მუშაობენ, მეორე შემთხვევაში კი მოსწავლეები თავად ქმნიან ელექტრონული მოწყობილობის, ვებგვერდისა და მობილური აპლიკაციის დიზაინსა და აიქონებს. ორივე შემთხვევაში სტუდენტების ძირითადი სამუშაო ინსტრუმენტი Adobe Illustrator-ია. კურსის ფარგლებში სტუდენტები Illustrator-ის გარდა სხვა გრაფიკულ პროგრამებშიც მუშაობენ, მაგალითად, Adobe Photoshop-ში.
+
+									დიზაინის მიმართულებით ჯეოლაბი კიდევ ერთ, 3D დიზაინის პროფესიულ კურსს სთავაზობს მსურველებს. ამ კურსის ფარგლებში სტუდენტები სივრცული ობიექტების შექმნას, მათ ანიმაციასა და ვიზუალიზაციას სწავლობენ. კურსის ფარგლებში სტუდენტები Cinema 4D-ს იყენებენ, რომელიც იდეალურია ზემოხსენებული ამოცანებისთვის. ამ ძლიერი 3D ინსტრუმენტის საშუალებით შესაძლებელია სარეკლამო რგოლების, მოკლემეტრაჟიანი ვიდეო პროდუქტებისა და თამაშების პერსონაჟების შექმნა.
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p89 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+									ჯეოლაბში ისწავლება როგორც პოლიგრაფიული დიზაინი - საბაზისო კურსის სახით, ასევე, ინტერფეისის პროფესიული (მობილური აპლიკაციის, ვებგვერდისა და ა. შ.) დიზაინი. პირველ შემთხვევაში სტუდენტები, კურსის ფარგლებში, პლაკატის, ბუკლეტისა და სხვა პოლიგრაფიული პროდუქტის დიზაინზე მუშაობენ, მეორე შემთხვევაში კი მოსწავლეები თავად ქმნიან ელექტრონული მოწყობილობის, ვებგვერდისა და მობილური აპლიკაციის დიზაინსა და აიქონებს. ორივე შემთხვევაში სტუდენტების ძირითადი სამუშაო ინსტრუმენტი Adobe Illustrator-ია. კურსის ფარგლებში სტუდენტები Illustrator-ის გარდა სხვა გრაფიკულ პროგრამებშიც მუშაობენ, მაგალითად, Adobe Photoshop-ში.
+
+
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p0 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row font-BPGNinoMtavruli last_row">
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p39 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+									ჯეოლაბში ისწავლება როგორც პოლიგრაფიული დიზაინი - საბაზისო კურსის სახით, ასევე, ინტერფეისის პროფესიული (მობილური აპლიკაციის, ვებგვერდისა და ა. შ.) დიზაინი. პირველ შემთხვევაში სტუდენტები, კურსის ფარგლებში, პლაკატის, ბუკლეტისა და სხვა პოლიგრაფიული პროდუქტის დიზაინზე მუშაობენ, მეორე შემთხვევაში კი მოსწავლეები თავად ქმნიან ელექტრონული მოწყობილობის, ვებგვერდისა და მობილური აპლიკაციის დიზაინსა და აიქონებს. ორივე შემთხვევაში სტუდენტების ძირითადი სამუშაო ინსტრუმენტი Adobe Illustrator-ია. კურსის ფარგლებში სტუდენტები Illustrator-ის გარდა სხვა გრაფიკულ პროგრამებშიც მუშაობენ, მაგალითად, Adobe Photoshop-ში.
+
+									დიზაინის მიმართულებით ჯეოლაბი კიდევ ერთ, 3D დიზაინის პროფესიულ კურსს სთავაზობს მსურველებს. ამ კურსის ფარგლებში სტუდენტები სივრცული ობიექტების შექმნას, მათ ანიმაციასა და ვიზუალიზაციას სწავლობენ. კურსის ფარგლებში სტუდენტები Cinema 4D-ს იყენებენ, რომელიც იდეალურია ზემოხსენებული ამოცანებისთვის. ამ ძლიერი 3D ინსტრუმენტის საშუალებით შესაძლებელია სარეკლამო რგოლების, მოკლემეტრაჟიანი ვიდეო პროდუქტებისა და თამაშების პერსონაჟების შექმნა.
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p89 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+									ჯეოლაბში ისწავლება როგორც პოლიგრაფიული დიზაინი - საბაზისო კურსის სახით, ასევე, ინტერფეისის პროფესიული (მობილური აპლიკაციის, ვებგვერდისა და ა. შ.) დიზაინი. პირველ შემთხვევაში სტუდენტები, კურსის ფარგლებში, პლაკატის, ბუკლეტისა და სხვა პოლიგრაფიული პროდუქტის დიზაინზე მუშაობენ, მეორე შემთხვევაში კი მოსწავლეები თავად ქმნიან ელექტრონული მოწყობილობის, ვებგვერდისა და მობილური აპლიკაციის დიზაინსა და აიქონებს. ორივე შემთხვევაში სტუდენტების ძირითადი სამუშაო ინსტრუმენტი Adobe Illustrator-ია. კურსის ფარგლებში სტუდენტები Illustrator-ის გარდა სხვა გრაფიკულ პროგრამებშიც მუშაობენ, მაგალითად, Adobe Photoshop-ში.
+
+
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="lesson_wrapper">
+						<div class="video_holder">
+							<a href="#video"> 
+								<div class="c100 p0 small">
+									<span class="glyphicon glyphicon-chevron-right"> </span> 
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="desc_holder clearfix">
+							<div class="note_icon"><a href="#notepad">  </a></div>
+							<div class="video_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+							<div class="video_intro"> ვებ პროგრამირება Front-End </div>	
+
+							<div class="note"> 
+								<p>   დიზაინერი ის ადამიანია, რომელიც გარკვეულ ფორმას ანიჭებს ჩანაფიქრს, ან მას გრაფიკული გამოსახულებით გადმოსცემს. გრაფიკული დიზაინის სპეციალისტი სხვადასხვა ვიზუალური ელემენტის შერჩევითა და შეხამებით (შრიფტი, გამოსახულება, ფერი, ფორმა და ა. შ.) აუდიტორიას გარკვეულ გზავნილს უზიარებს. 3D დიზაინერი კი სამგანზომილებიან ობიექტებს, პეიზაჟებსა და არსებებს ქმნის. დიზაინის მიმართულებით ჯეოლაბი, მსურველებს რამდენიმე კურსს სთავაზობს:
+
+
+								</p> 
+								<div class="note_desc_holder clearfix">
+									<div class="note_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+									<div class="note_intro"> ვებ პროგრამირება Front-End </div>	
+									<button class="close_btn"> X </button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+
+	<!-- User Lessons End -->
+
+	<footer>
+		<div class="developers font-DejaVuSans">
+			ბერდია
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

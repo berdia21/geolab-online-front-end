@@ -1,0 +1,139 @@
+.lecture_inner_wrapper {
+	margin: 100px 0px;
+}
+
+
+.lecture_menu label {
+
+	position: relative;
+}
+.lecture_menu input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+.checkmark_3 {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border: 1px solid #715774;
+	background-color: transparent;
+	border-radius: 3px;
+	margin-right: 7px;
+}
+
+.lecture_menu .actived {
+	background-color: #715774;
+	border-color: #715774;
+}
+.checkmark_3:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.lecture_menu .checkmark_3:after {
+	width: 15px;
+    height: 15px;
+    background-color: #715774;
+    border-radius: 3px;
+}
+
+.lecture_menu li {
+	background-color: #DCE1ED;
+	border-radius: 10px;
+	margin: 10px 20px;
+	padding: 25px 15px;
+}
+
+.lecture_menu li label {
+	margin-bottom: 0px;
+	color: #478ECC;
+	font-size: 18px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.lecture_item {
+	display: none;
+	margin: 10px 0px 10px 10px;
+}
+.lecture_text_box {
+	background-color: #DCE1ED;
+	border-radius: 20px;
+}
+.lecture_video_box {
+	overflow: hidden;
+	border-radius: 20px;
+}
+.lecture_text_box p {
+	font-size: 14px;
+	padding: 0px 25px 0px;
+	color: #787E86;
+	height: 420px;
+	overflow-y: auto;
+	border-top: 25px solid #DCE1ED;
+	border-bottom: 25px solid #DCE1ED;
+	margin: 0px;
+}
+.lecture_desc {
+	width: 100%;
+}
+.lecture_desc .note_icon {
+	display: inline-block;
+	float: right;
+}
+.lecture_desc .lecture_intro, .lecture_desc .lecture_title {
+	float: none;
+	font-family: 'BPGNinoMtavruli';
+	font-size: 14px;
+}
+.lecture_desc .lecture_title a {
+	color: #787E86;
+	transition: .3s ease-out;
+}
+.lecture_desc .lecture_title a:hover {
+	color: #478ECC;
+}
+.lecture_desc .note {
+	margin: 20px 0px;
+	display: none;
+}
+.lecture_desc .note_icon a {
+	display: inline-block;
+	background-image: url(../images/note_icon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 35px;
+}
+.on {
+	display: block;
+}
+
+/* width */
+.lecture_item p::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+/* Track */
+.lecture_item p::-webkit-scrollbar-track {
+    background: #DCE1ED;
+}
+ 
+/* Handle */
+.lecture_item p::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* Handle on hover */
+.lecture_item p::-webkit-scrollbar-thumb:hover {
+    background: #715774;
+}
+
+.lecture_text_box {
+	overflow: hidden;
+}
