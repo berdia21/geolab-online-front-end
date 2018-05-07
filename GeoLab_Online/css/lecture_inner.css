@@ -137,3 +137,14 @@
 .lecture_text_box {
 	overflow: hidden;
 }
+
+.lecture_desc .note {
+	height: 420px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.note form {
+	background-color: #DCE1ED;
+}
+

@@ -131,14 +131,18 @@
 	margin-left: 30px;
 }
 
-.user_lessons_page .note p, .lecture_desc .note p {
-	padding: 30px;
+.user_lessons_page .note .note_content {
+	padding: 0px 30px;
 	width: 720px;
 	height: 537px;
 	background-color: #DCE1ED;
 	border-radius: 20px;
 	overflow-y: auto;
 	margin: 0;
+	color: #787E86;
+	font-size: 14px;
+	border-bottom: 30px solid #DCE1ED;
+	border-top: 30px solid #DCE1ED;
 }
 
 .user_lessons_page .note_desc_holder {

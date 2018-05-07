@@ -1,0 +1,29 @@
+.ql-editor {
+	background: #DCE1ED;
+	
+}
+.ql-container.ql-snow {
+	border: none !important;
+}
+.ql-toolbar.ql-snow {
+	border: none !important;
+	background-color: #eee;
+}
+
+/*.ql-toolbar.ql-snow span, .ql-toolbar.ql-snow button {
+	color: #fff;
+}
+
+.ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fill {
+	fill: #fff !important;
+}
+.ql-snow .ql-stroke {
+	stroke: #fff !important;
+}*/
+
+.ql-editor p, .ql-editor ol, .ql-editor ul, 
+.ql-editor pre, .ql-editor blockquote, .ql-editor h1,
+ .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6 {
+ 	font-size: 14px;
+ 	color: #787E86;
+}	
