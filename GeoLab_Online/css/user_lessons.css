@@ -129,10 +129,10 @@
 	z-index: 9;
 	max-width: 720px;
 	margin-left: 30px;
+	border-radius: 20px;
 }
 
 .user_lessons_page .note .note_content {
-	padding: 0px 30px;
 	width: 720px;
 	height: 537px;
 	background-color: #DCE1ED;
@@ -141,8 +141,7 @@
 	margin: 0;
 	color: #787E86;
 	font-size: 14px;
-	border-bottom: 30px solid #DCE1ED;
-	border-top: 30px solid #DCE1ED;
+	border-bottom: 10px solid #DCE1ED;
 }
 
 .user_lessons_page .note_desc_holder {

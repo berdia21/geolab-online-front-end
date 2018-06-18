@@ -142,9 +142,13 @@
 	height: 420px;
 	border-radius: 20px;
 	overflow: hidden;
+	width: 720px;
 }
 
 .note form {
 	background-color: #DCE1ED;
 }
 
+.note {
+	border-bottom: 10px solid #DCE1ED;
+}
