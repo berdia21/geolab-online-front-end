@@ -427,6 +427,53 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="lecture_item lecture_content_4">
+					<div class="lecture_quiz_box ">
+						<div class="quiz_counter"> 0 / 10 </div>
+						<div class="quiz_question"> ვინ შექმნა ინტერნეტი? </div>
+
+						<form>
+							<label class="quiz_answer"> 
+								<input type="radio"  name="radio">
+								<span>ჯონ მოუჩიმ</span>
+								<span class="checkmark_quiz"></span>
+								
+							</label>
+							<label class="quiz_answer"> 
+								<input type="radio"  name="radio">
+								<span>ტიმ ბერნეს-ლიმ </span>
+								<span class="checkmark_quiz"></span>
+								
+							</label>
+							<label class="quiz_answer">
+								<input type="radio"  name="radio">
+								<span> მარტინ კუპერმა </span>
+								<span class="checkmark_quiz"></span>
+							</label>
+
+							<div class="quiz_buttons">
+								<button class="quiz_button"> უკან </button>
+								<button class="quiz_button"> წინ </button>
+							</div>
+
+						</form>
+						
+
+
+					</div>
+
+				</div>
+
+				<div class="lecture_desc clearfix">
+					<div class="note_icon"><a href="#notepad">  </a></div>
+					<div class="lecture_title"><a href="#"> ვებ პროგრამირება Front-End (HTML) </a></div>
+					<div class="lecture_intro"> ვებ პროგრამირება Front-End </div>	
+
+					<div class="note"> 
+						<div class="editor"> noted text  </div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -446,33 +493,33 @@
 
 
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 
 	<script> 
-	 $('.editor').each(function(){
-	
-		var quill = new Quill(this, {
-			modules: {
-				toolbar: [
-				['bold', 'italic', 'underline', 'strike'], 
-				[ 'code-block', 'blockquote'],
-				[{ 'size': ['small', false, 'large', 'huge'] }],
-				[{ 'color': [] }, { 'background': [] }],
-				[{ 'align': [] }],
-				['link'],
-				['formula'],
-				[{ 'script': 'sub'}, { 'script': 'super' }],
-				['clean'],
-				]
-			},
-			placeholder: 'Compose an epic...',
+		$('.editor').each(function(){
+
+			var quill = new Quill(this, {
+				modules: {
+					toolbar: [
+					['bold', 'italic', 'underline', 'strike'], 
+					[ 'code-block', 'blockquote'],
+					[{ 'size': ['small', false, 'large', 'huge'] }],
+					[{ 'color': [] }, { 'background': [] }],
+					[{ 'align': [] }],
+					['link'],
+					['formula'],
+					[{ 'script': 'sub'}, { 'script': 'super' }],
+					['clean'],
+					]
+				},
+				placeholder: 'Compose an epic...',
   			theme: 'snow'  // or 'bubble'
+  		});
 		});
-});
-	
-</script>
+
+	</script>
 
 </body>
 </html>

@@ -127,9 +127,15 @@ $(document).ready(function($) {
 		
 	$('.item_video').click(function(event) {
 		/* Act on the event */
-		
 		$('.lecture_item').removeClass('on');
 		$('.lecture_content_2').addClass('on');
+
+	});
+
+	$('.item_quiz').click(function(event) {
+		/* Act on the event */
+		$('.lecture_item').removeClass('on');
+		$('.lecture_content_4').addClass('on');
 
 	});
 

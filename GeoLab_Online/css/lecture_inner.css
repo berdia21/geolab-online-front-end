@@ -20,6 +20,7 @@
 	background-color: transparent;
 	border-radius: 3px;
 	margin-right: 7px;
+	margin-bottom: 7px;
 }
 
 .lecture_menu .actived {
@@ -43,7 +44,6 @@
 	background-color: #DCE1ED;
 	border-radius: 10px;
 	margin: 10px 20px;
-	padding: 25px 15px;
 }
 
 .lecture_menu li label {
@@ -52,15 +52,25 @@
 	font-size: 18px;
 	font-weight: normal;
 	cursor: pointer;
+	width: 100%;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
 }
 
 .lecture_item {
 	display: none;
 	margin: 10px 0px 10px 10px;
 }
-.lecture_text_box {
+.lecture_text_box, .lecture_quiz_box {
 	background-color: #DCE1ED;
 	border-radius: 20px;
+}
+
+.lecture_quiz_box {
+	min-height: 345px;
+	width: 100%;
 }
 .lecture_video_box {
 	overflow: hidden;
@@ -151,4 +161,91 @@
 
 .note {
 	border-bottom: 10px solid #DCE1ED;
+}
+
+
+/* Quiz */
+.lecture_quiz_box {
+	padding: 25px;
+}
+
+.quiz_counter {
+	color: #715774;
+	font-size: 18px;
+	font-family: 'BPGNinoMtavruli';
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.quiz_question {
+	color:	#478ECC;
+	font-size: 18px;
+	font-family: 'BPGNinoMtavruli';
+	margin-bottom: 40px;
+}
+
+.quiz_answer {
+	display: table;
+	font-size: 18px;
+	color:	#478ECC;
+	font-family: 'BPGNinoMtavruli';
+	margin-bottom: 25px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+     cursor: pointer;
+     position: relative;
+     font-weight: normal;
+     padding-left: 25px;
+}
+.quiz_answer:last-child {
+	margin-bottom: 0px;
+}
+
+.quiz_answer input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark_quiz {
+	position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid #715974;
+    border-radius: 3px;
+
+}
+
+ .quiz_answer input:checked ~ .checkmark_quiz {
+	background-color: #715974;
+}
+.quiz_answer input:checked + span {
+	color: #715974;
+}
+.quiz_buttons {
+	float: right;
+}
+
+.quiz_button {
+	font-size: 14px;
+	font-family: 'BPGNinoMtavruli';
+	color: #715974;
+	border: 1px solid #715974;
+	border-radius: 6px;
+	background-color: transparent;
+	padding: 10px 24px 6px; 
+	transition: 0.3s;
+}
+.quiz_button:hover {
+	background-color: #715974;
+	color: #fff;
+}
+
+.quiz_button:first-child {
+	margin-right: 15px;
 }
