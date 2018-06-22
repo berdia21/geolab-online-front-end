@@ -1,15 +1,29 @@
 $(document).ready(function($) {
 	/*-----------Login----------*/
 
-	$('.login_btn').on('click', function(event) {
+
+	// $('.login_btn').on('click', function(event) {
+	// 	event.preventDefault();
+	// 	/* Act on the event */
+	// 	$('body').find(".registration_bg").fadeIn('slow');
+	// });
+	// $('.registration_wrapper').on('click', '.close_btn', function(event) {
+	// 	event.preventDefault();
+	// 	/* Act on the event */
+	// 	$('body').find(".registration_bg").fadeOut('fast');
+	// }); 
+
+
+ $('.login_icon').on('click', function(event) {
 		event.preventDefault();
 		/* Act on the event */
-		$('body').find(".registration_bg").fadeIn('slow');
+		$('body').find(".registration_bg_2").fadeIn('slow');
 	});
-	$('.registration_wrapper').on('click', '.close_btn', function(event) {
+
+ $('.registration_wrapper').on('click', '.close_btn', function(event) {
 		event.preventDefault();
 		/* Act on the event */
-		$('body').find(".registration_bg").fadeOut('fast');
+		$('body').find(".registration_bg_2").fadeOut('fast');
 	});
 
 	/*-----------Search----------*/
@@ -119,12 +133,12 @@ $(document).ready(function($) {
 
 	$('.item_text').click(function(event) {
 		/* Act on the event */
-	
+
 		$('.lecture_item').removeClass('on');
 		$('.lecture_content_1').addClass('on');
 
 	});
-		
+
 	$('.item_video').click(function(event) {
 		/* Act on the event */
 		$('.lecture_item').removeClass('on');
@@ -139,9 +153,22 @@ $(document).ready(function($) {
 
 	});
 
-	
+	var scrollcheck = true;
 
+$(window).scroll(function (event) {
+	if ($(this).scrollTop() > $('.header_wrapper').height() && scrollcheck) {
+		$('.registration_bg').animate({top: "0px"},"fast");
+		$('.registration_bg_2').animate({top: "0px"},"fast");
+		scrollcheck = false;
+	}
+	 else if ($(this).scrollTop() < $('.header_wrapper').height() && !scrollcheck) {
+		$('.registration_bg').animate({top: "69px"},"fast");
+		$('.registration_bg_2').animate({top: "69px"},"fast");
+		scrollcheck = true;
+	}
+});
 
 });
+
 
 
